@@ -4,7 +4,8 @@
   --clr-primary:rgb(35,39,42);
   --clr-neutral-100:rgb(255,255,255);
   --clr-neutral-200:rgb(246,246,246);
-  --clr-accent-500:rgb(87,101,242);
+  --clr-accent-500:rgb(64,78,237);
+  
 
   --ff-primary:'Noto Sans', sans-serif;
 
@@ -90,6 +91,120 @@ picture ,svg{
     scroll-behavior: auto !important;
   }
 }
+/* Layout Css */
+body{
+  font-family: var(--ff-primary);
+  min-width: 300px;
+}
+.nav-container{
+  max-width: 1200px;
+  margin-inline: auto;
+}
+.flex-nowrap{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.nav-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a{
+   text-decoration: none;
+}
+.nav-section li a{
+  padding: 1rem;
+  margin-inline: .5rem;
+}
+.nav-section li a:hover{
+ text-decoration: underline;
+}
+
+.button{
+  padding: .5rem 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 5ms ease-in-out;
+}
+.button:hover{
+  box-shadow: 2px 2px 5px rgb(55, 55, 55),-2px 0px 5px rgb(55, 55, 55);
+}
+
+.changeclr:hover>a{
+  color: var(--clr-accent-500);
+  transition: color 50ms ease-in-out;
+}
+.mobile-version-icon{
+  display: none;
+}
+.mobile-version-icon:hover{
+ cursor: pointer;
+}
+@media screen and (max-width:1000px) {
+  .nav-section{
+    display: none;
+    
+  }
+  #login{
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+  .mobile-version-icon{
+    display: block;
+  }
+  
+}
+.container{
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 8rem 2.5rem ;
+}
+.small-container{
+  max-width: 880px;
+  margin-inline: auto;
+}
+
+.flex-column{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.text-center{
+  text-align: center;
+}
+.heading{
+  margin-bottom: .5rem;
+}
+.flex-row{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.extra-padding{
+  padding: 1rem 2rem;
+}
+#downloadbtn{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+.changeclr:hover>svg{
+  fill: var(--clr-accent-500);
+  transition: fill 50ms ease-in-out;
+}
+#openinbrower-btn:hover{
+  background-color: rgb(54 57 63);
+}
+
 
 /* Utility class */
 .text-clr-primary{
@@ -153,3 +268,4 @@ picture ,svg{
 .fs-button{
   font-size: var(--fs-button);
 }
+
