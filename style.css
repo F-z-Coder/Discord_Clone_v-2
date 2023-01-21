@@ -176,12 +176,6 @@ a{
 #openinbrower-btn{
   display: none;
 }
-#openinbrower-btn{
-  text-align: center;
-}
-#openinbrower-btn:hover{
-  background-color: rgb(54 57 63);
-}
 .high-zindex{
   position: relative;
   z-index: 1;
@@ -228,11 +222,7 @@ a{
 .header-container{
   padding: 1rem 2.5rem ;
 }
-#login{
-  display: block;
-  margin-left: auto;
-  margin-right: 1rem;
-}
+
 .container{
   padding: 5rem 2.5rem ;
 }
@@ -282,6 +272,10 @@ a{
   max-width: max-content;
   margin-left: -40px;
  }
+ #info-postion-left{
+  /* lowest value first */
+  order: -1;
+ }
  .img-column{
   width: 60%;
  }
@@ -314,9 +308,9 @@ a{
    text-decoration: underline;
   }
   #login{
-    margin-left: 0;
-    margin-right: 0;
+    display: block;
   }
+ 
   .mobile-version-icon{
     display: none;
   }
