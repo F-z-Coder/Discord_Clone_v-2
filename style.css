@@ -2,7 +2,7 @@
 /* Get all size clr weights */
 :root{
   --clr-primary:rgb(35,39,42);
-  --clr-neutral-100:rgb(255,255,255);
+  --clr-neutral-100:rgb(255, 255, 255);
   --clr-neutral-200:rgb(246,246,246);
   --clr-accent-500:rgb(64,78,237);
   
@@ -98,7 +98,7 @@ body{
   min-width: 320px;
 }
 .header-container{
-  max-width: 1200px;
+  max-width: 1180px;
   margin-inline: auto;
   padding: 1rem 1.5rem ;
 }
@@ -108,8 +108,7 @@ body{
   align-items: center;
 }
 #login{
-  margin-left: auto;
-  margin-right: 1rem;
+  display: none;
 }
 .nav-section{
   display: none;
@@ -117,14 +116,6 @@ body{
 a{
    text-decoration: none;
 }
-.nav-section li a{
-  padding: 1rem;
-  margin-inline: .5rem;
-}
-.nav-section li a:hover{
- text-decoration: underline;
-}
-
 .button{
   padding: .5rem 1rem;
   border-radius: 2rem;
@@ -150,7 +141,7 @@ a{
   position: relative;
 }
 .container{
-  max-width: 1200px;
+  max-width: 1280px;
   margin-inline: auto;
   padding: 3.5rem 1.5rem ;
 }
@@ -182,6 +173,12 @@ a{
   fill: var(--clr-accent-500);
   transition: fill 50ms ease-in-out;
 }
+#openinbrower-btn{
+  display: none;
+}
+#openinbrower-btn{
+  text-align: center;
+}
 #openinbrower-btn:hover{
   background-color: rgb(54 57 63);
 }
@@ -204,17 +201,38 @@ a{
   margin-left: -5rem;
 }
 
+.columns{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.img-column{
+  width: 100%;
+}
+.info-column{
+  width: 100%;
+  padding-top: 2rem;
+}
+.info-column h2{
+  margin-bottom: 2rem;
+}
+
 
 
 @media screen and (min-width:770px) {
 :root{
   --fs-heading:var(--fs-700);
-  --fs-secondary:var(--fs-600);
+  --fs-secondary-heading:var(--fs-600);
 }
 .header-container{
   padding: 1rem 2.5rem ;
 }
-
+#login{
+  display: block;
+  margin-left: auto;
+  margin-right: 1rem;
+}
 .container{
   padding: 5rem 2.5rem ;
 }
@@ -222,6 +240,12 @@ a{
 .small-container{
   max-width:50%;
   margin-bottom: 5rem;
+}
+#openinbrower-btn{
+  display: block;
+}
+#openinbrower-btn:hover{
+  background-color: rgb(54 57 63);
 }
 
 .topsectionimg{
@@ -258,6 +282,18 @@ a{
   max-width: max-content;
   margin-left: -40px;
  }
+ .img-column{
+  width: 60%;
+ }
+ .info-column{
+  width: 40%;
+ }
+ .left-padding{
+  padding-left: 2rem;
+ }
+ .right-padding{
+  padding-right: 2rem;
+ }
 
 }
 
@@ -269,6 +305,13 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .nav-section li a{
+    padding: 1rem;
+    margin-inline: .5rem;
+  }
+  .nav-section li a:hover{
+   text-decoration: underline;
   }
   #login{
     margin-left: 0;
@@ -307,7 +350,12 @@ a{
    .tableimg img{
     margin-left: 370px;
    }
-
+   .left-padding{
+    padding-left: 4.5rem;
+   }
+   .right-padding{
+    padding-right: 4.5rem;
+   }
 
 }
 
