@@ -208,11 +208,28 @@ a{
   width: 100%;
   padding-top: 2rem;
 }
-.info-column h2{
-  margin-bottom: 2rem;
+.description-margin{
+  margin-top: 2rem;
 }
 
+.secondary-wraper{
+max-width: 980px;
+margin-inline: auto;
+}
+#stardiv{
 
+}
+#stardiv h3{
+  position: relative;
+  z-index: 10;
+}
+#star-img{
+  position: absolute;
+  top:-1.5rem;
+  left: -1rem;
+  z-index:9 ;
+  border: 2px solid red;
+}
 
 @media screen and (min-width:770px) {
 :root{
@@ -288,6 +305,10 @@ a{
  .right-padding{
   padding-right: 2rem;
  }
+.align-item{
+  align-items: center;
+  text-align: center;
+}
 
 }
 
