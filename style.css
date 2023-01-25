@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700;800&family=Rowdies:wght@400;700&display=swap');
 /* Get all size clr weights */
 :root{
   --clr-primary:rgb(35,39,42);
   --clr-neutral-100:rgb(255, 255, 255);
   --clr-neutral-200:rgb(246,246,246);
+  --clr-accent-100:rgb(121 131 245);
   --clr-accent-500:rgb(64,78,237);
   
 
-  --ff-primary:'Noto Sans', sans-serif;
+  --ff-primary:'Open Sans','Noto Sans', sans-serif;
+  --ff-heading: 'Rowdies','Noto Sans', sans-serif;
+  
 
   --fw-normal:400;
   --fw-medium:500;
@@ -123,7 +126,7 @@ a{
   transition: all 5ms ease-in-out;
 }
 .button:hover{
-  box-shadow: 2px 2px 5px rgb(55, 55, 55),-2px 0px 5px rgb(55, 55, 55);
+  box-shadow: 2px 2px 3px 1px rgb(57, 57, 57),-2px 0px 3px 1px rgb(55, 55, 55);
 }
 
 .changeclr:hover>a{
@@ -145,18 +148,25 @@ a{
   margin-inline: auto;
   padding: 3.5rem 1.5rem ;
 }
+.high-zindex{
+  position: relative;
+  z-index: 10;
+} 
+
 .flex-column{
   display: flex;
   flex-flow: column wrap;
   align-items:flex-start;
   justify-content: center;
-  gap: 1rem;
+}
+.heading{
+  font-family: var(--ff-heading);
 }
 .flex-row{
   display: flex;
   flex-flow: row wrap;
-  justify-content: start;
-  align-items: center;
+  justify-content:space-between;
+  /* align-items: center; */
   gap: 1.5rem;
 }
 .extra-padding{
@@ -176,10 +186,7 @@ a{
 #openinbrower-btn{
   display: none;
 }
-.high-zindex{
-  position: relative;
-  z-index: 1;
-}
+
 .topsectionimg{
   overflow: hidden;
   margin-inline: auto;
@@ -211,24 +218,85 @@ a{
 .description-margin{
   margin-top: 2rem;
 }
-
 .secondary-wraper{
 max-width: 980px;
 margin-inline: auto;
 }
-#stardiv{
-
+#videocall-img{
+  width: 100%;
 }
-#stardiv h3{
-  position: relative;
-  z-index: 10;
+
+#change-container{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom:3.5rem;
+  overflow-x: hidden;
+}
+#stardiv{
+  margin-top:2.5rem;
 }
 #star-img{
   position: absolute;
-  top:-1.5rem;
-  left: -1rem;
-  z-index:9 ;
-  border: 2px solid red;
+  top:-2.5rem;
+  left: 50%;
+}
+#star-img img{
+  max-width:max-content;
+  width: max-content;
+  margin-left: -16rem;
+}
+
+.accent-btn{
+  background-color: var(--clr-accent-500);
+}
+.accent-btn:hover{
+  background-color: var(--clr-accent-100);
+}
+
+.grid-layout{
+  display: grid;
+  grid-template-areas: "info-sec"
+                        "product  company "
+                        "resoucres policies" ;
+}
+
+
+.footer-info-sec h4{
+ line-height: var(--fs-400);
+ padding-bottom: 1.5rem;
+}
+#language-selector{
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+/* #language-selector option::before{
+  content:url("imgs\\usaflag.svg");
+} */
+#social-sec{
+  display: flex;
+  padding-block: 1.5rem;
+  gap: 1.5rem;
+}
+.social-icon{
+  width: 1.5rem;
+  aspect-ratio: 1;
+}
+.bottom-nav{
+  width: 100%;
+}
+.even-columns{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
+}
+.column{
+
 }
 
 @media screen and (min-width:770px) {
@@ -309,6 +377,9 @@ margin-inline: auto;
   align-items: center;
   text-align: center;
 }
+#change-container{
+  padding-bottom: 5rem;
+}
 
 }
 
@@ -323,7 +394,6 @@ margin-inline: auto;
   }
   .nav-section li a{
     padding: 1rem;
-    margin-inline: .5rem;
   }
   .nav-section li a:hover{
    text-decoration: underline;
@@ -339,16 +409,16 @@ margin-inline: auto;
     padding: 8rem 2.5rem ;
   }
   .small-container{
-    max-width: 880px;
+    max-width: 780px;
     margin-inline: auto;
     margin-bottom: 3rem;
   }
   .flex-column{
     align-items: center;
   }
-  .flex-row{
+  /* .flex-row{
     justify-content:center;
-  }
+  } */
   .text-align{
     text-align: center;
   }
@@ -371,7 +441,9 @@ margin-inline: auto;
    .right-padding{
     padding-right: 4.5rem;
    }
-
+   #change-container{
+    padding-bottom: 7.5rem;
+  }
 }
 
 /* Utility class */
@@ -387,6 +459,7 @@ margin-inline: auto;
 .text-clr-accent-500{
   color: var(--clr-accent-500);
 }
+
 .bg-clr-primary{
   background-color: var(--clr-primary);
 }
