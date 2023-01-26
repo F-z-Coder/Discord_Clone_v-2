@@ -162,6 +162,7 @@ a{
 }
 .heading{
   font-family: var(--ff-heading);
+  line-height: var(--fs-heading);
 }
 .flex-row{
   display: flex;
