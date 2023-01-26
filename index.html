@@ -10,7 +10,7 @@
     <body>
         <header class="bg-clr-accent-500">
             <div class="header-container flex-nowrap">
-                <div class="logoimg">
+                <div>
                     <a href="#">
                         <img src="imgs\discord_logo.svg" alt="Logo">
                     </a>
@@ -84,10 +84,9 @@
                                     </g>
                                 </svg>
 
-                                <a class="fs-button fw-medium text-clr-primary" href="#">
+                                <a   class="downloadbtn-text fs-button fw-medium text-clr-primary" href="#">
                                     Download from Google Play
                                 </a>
-
                             </div>
                             <div id="openinbrower-btn" class="button extra-padding | bg-clr-primary">
 
@@ -210,7 +209,7 @@
                                     fill="#FFFFFF"></path>
                             </g>
                         </svg>
-                        <a class="fs-button fw-medium text-clr-neutral-100" href="#">
+                        <a class=" downloadbtn-text |fs-button fw-medium text-clr-neutral-100" href="#">
                             Download from Google Play
                         </a>
                     </div>
@@ -218,147 +217,165 @@
             </section>
         </main>
         <footer class="bg-clr-primary">
-            <div class="container  grid-layout">
-                <div class="footer-info-sec">
-                    <h4 class="fs-400 fw-extrabold text-clr-accent-500">
-                        IMAGINE A PLACE
-                    </h4>
-                    <select class="fs-small-button fw-normal text-clr-neutral-100" id="language-selector">
-                        <option  class="bg-clr-primary"value="English, USA" selected="selected">English, USA</option>
-                        <option class="bg-clr-primary" value="Hindi">हिंदी</option>
-                    </select>
-                    <ul role="list" id="social-sec">
-                        <li>
-                            <a href="#">
-                                <svg class="social-icon">
-                                    <use xlink:href="imgs/social-icon.svg#twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <svg class="social-icon">
-                                    <use xlink:href="imgs/social-icon.svg#insta"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <svg class="social-icon">
-                                    <use xlink:href="imgs/social-icon.svg#fb"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <svg class="social-icon">
-                                    <use xlink:href="imgs/social-icon.svg#yt"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="bottom-nav flex-row">
-                    <div class="even-columns">
-                        <div class="column">
-                            <h5 class="fs-nav fw-normal text-clr-accent-500">Product</h5>
-                            <ul role="list">
-                                <li>
-                                    <a href="" class="fs-nav fw-normal text-clr-neutral-100">
-                                        Download
-                                </li>
-                                <li>
-                                    <a href="" class="fs-nav fw-normal text-clr-neutral-100">Nitro</a>
-                                </li>
-                                <li>
-                                    <a href="" class="fs-nav fw-normal text-clr-neutral-100">Status</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <h5 class="fs-nav fw-normal text-clr-accent-500">Company</h5>
-                            <ul role="list">
-                                <li>
-                                    <a href="" class="fs-nav fw-normal text-clr-neutral-100">
-                                        About</a>
-                                </li>
-                                <li>
-                                    <a href="" class="fs-nav fw-normal text-clr-neutral-100">Jobs</a>
-                                </li>
-                                <li>
-                                    <a href="" class="fs-nav fw-normal text-clr-neutral-100">Branding</a>
-                                </li>
-                                <li>
-                                    <a href="" class="fs-nav fw-normal text-clr-neutral-100">Newsroom</a>
-                                </li>
-                            </ul>
+            <div class="container change-padding-block">
+                <div class="grid-layout">
+                    <div class="footer-info-sec">
+                        <h4 class="fs-400 fw-extrabold text-clr-accent-500">
+                            IMAGINE A PLACE
+                        </h4>
+                        <div class="language-selector-wrapper">
+
+                            <img src="imgs\usaflag.png" alt="usaflag">
+
+                            <select
+                                id="language-selector"
+                                class="fs-small-button fw-normal text-clr-neutral-100">
+                                <option class="bg-clr-primary" value="English, USA" selected="selected">English, USA</option>
+                                <option class="bg-clr-primary" value="Hindi">हिंदी</option>
+                            </select>
                         </div>
 
+                        <ul role="list" id="social-sec">
+                            <li>
+                                <a href="#">
+                                    <svg class="social-icon">
+                                        <use xlink:href="imgs/social-icon.svg#twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg class="social-icon">
+                                        <use xlink:href="imgs/social-icon.svg#insta"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg class="social-icon">
+                                        <use xlink:href="imgs/social-icon.svg#fb"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg class="social-icon">
+                                        <use xlink:href="imgs/social-icon.svg#yt"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="even-columns">
-                        <div class="column">
-                            <h5 class="fs-nav fw-normal text-clr-accent-500">Resources</h5>
-                            <ul role="list">
-                                <li>
-                                    <a href="" class="fs-nav fw-normal text-clr-neutral-100">
-                                        College</a>
-                                </li>
-                                <li>
-                                    <a href="" class="fs-nav fw-normal text-clr-neutral-100">Support</a>
-                                </li>
-                                <li>
-                                    <a href="" class="fs-nav fw-normal text-clr-neutral-100">Safety</a>
-                                </li>
-                                <li>
-                                    <a href="" class="fs-nav fw-normal text-clr-neutral-100">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="" class="fs-nav fw-normal text-clr-neutral-100">Feedback</a>
-                                </li>
-                                <li>
-                                    <a href="" class="fs-nav fw-normal text-clr-neutral-100">Developers</a>
-                                </li>
-                                <li>
-                                    <a href="" class="fs-nav fw-normal text-clr-neutral-100">StreamKit</a>
-                                </li>
-                                <li>
-                                    <a href="" class="fs-nav fw-normal text-clr-neutral-100">Creators</a>
-                                </li>
-                                <li>
-                                    <a href="" class="fs-nav fw-normal text-clr-neutral-100">Community</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <h5 class="fs-nav fw-normal text-clr-accent-500">Policies</h5>
-                            <ul role="list">
-                                <li>
-                                    <a href="" class="fs-nav fw-normal text-clr-neutral-100">Terms</a>
-                                </li>
-                                <li>
-                                    <a href="" class="fs-nav fw-normal text-clr-neutral-100">Privacy</a>
-                     
-                                <li>
-                                    <a href="" class="fs-nav fw-normal text-clr-neutral-100">Cookies Setting</a>
-                                </li>
-                                <li>
-                                    <a href="" class="fs-nav fw-normal text-clr-neutral-100">Guidelines</a>
-                                </li>
-                                <li>
-                                    <a href="" class="fs-nav fw-normal text-clr-neutral-100">Acknowledgements</a>
-                                </li>
-                                <li>
-                                    <a href="" class="fs-nav fw-normal text-clr-neutral-100">Licenses</a>
-                                </li>
-                                <li>
-                                    <a href="" class="fs-nav fw-normal text-clr-neutral-100">Moderation</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="product bottom-nav">
+                        <h5 class="fs-nav fw-normal text-clr-accent-500">Product</h5>
+                        <ul role="list">
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-neutral-100">
+                                    Download
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-neutral-100">Nitro</a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-neutral-100">Status</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="company bottom-nav">
+                        <h5 class="fs-nav fw-normal text-clr-accent-500">Company</h5>
+                        <ul role="list">
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-neutral-100">
+                                    About</a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-neutral-100">Jobs</a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-neutral-100">Branding</a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-neutral-100">Newsroom</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="resources bottom-nav">
+                        <h5 class="fs-nav fw-normal text-clr-accent-500">Resources</h5>
+                        <ul role="list">
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-neutral-100">
+                                    College</a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-neutral-100">Support</a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-neutral-100">Safety</a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-neutral-100">Blog</a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-neutral-100">Feedback</a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-neutral-100">Developers</a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-neutral-100">StreamKit</a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-neutral-100">Creators</a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-neutral-100">Community</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="policies bottom-nav">
+                        <h5 class="fs-nav fw-normal text-clr-accent-500">Policies</h5>
+                        <ul role="list">
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-neutral-100">Terms</a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-neutral-100">Privacy</a>
 
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-neutral-100">Cookies Setting</a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-neutral-100">Guidelines</a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-neutral-100">Acknowledgements</a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-neutral-100">Licenses</a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-neutral-100">Moderation</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="blue-line" class="bg-clr-accent-500"></div>
+                <div class="flex-nowrap">
+                    <div>
+                        <a href="#">
+                            <img src="imgs\discord_logo.svg" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="button accent-btn">
+                        <a class="fs-small-button fw-medium text-clr-neutral-100" href="#">
+                            Download
+                        </a>
                     </div>
                 </div>
             </div>
+
         </footer>
+        <script src="main.js"></script>
     </body>
 </html>

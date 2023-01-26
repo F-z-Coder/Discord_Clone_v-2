@@ -257,46 +257,76 @@ margin-inline: auto;
   background-color: var(--clr-accent-100);
 }
 
+
 .grid-layout{
   display: grid;
-  grid-template-areas: "info-sec"
-                        "product  company "
-                        "resoucres policies" ;
+  gap: 3.5rem;
+  grid-template-areas:
+    'footer-info-sec footer-info-sec'
+    'product          company'
+    'resoucres        policies' ;
 }
-
-
+.footer-info-sec{
+  grid-area: footer-info-sec;
+}
+.product{
+  grid-area: product;
+}
+.company{
+  grid-area: company;
+}
+.resources{
+  grid-area: resoucres;
+}
+.policies{
+  grid-area: policies;
+}
 .footer-info-sec h4{
- line-height: var(--fs-400);
- padding-bottom: 1.5rem;
-}
-#language-selector{
-  background-color: transparent;
-  border: none;
-  outline: none;
-}
-/* #language-selector option::before{
-  content:url("imgs\\usaflag.svg");
-} */
-#social-sec{
+  line-height: var(--fs-400);
+  padding-bottom: 1.5rem;
+ }
+ .language-selector-wrapper{
   display: flex;
-  padding-block: 1.5rem;
-  gap: 1.5rem;
+  align-items: center;
+ }
+ .language-selector-wrapper img{
+  width: 24px;
+  height: 16px;
+  margin-right: 8px;
+ }
+ #language-selector{
+   background-color: transparent;
+   border: none;
+   outline: none;
+   cursor: pointer;
+ }
+ #social-sec{
+   display: flex;
+   padding-block: 1.5rem;
+   gap: 1.5rem;
+ }
+ .social-icon{
+   width: 1.5rem;
+   aspect-ratio: 1;
+ }
+.bottom-nav h5{
+ padding: .25rem;
 }
-.social-icon{
-  width: 1.5rem;
-  aspect-ratio: 1;
+.bottom-nav ul li{
+  padding: .25rem;
 }
-.bottom-nav{
-  width: 100%;
+.bottom-nav ul li:hover{
+  text-decoration: underline;
+  cursor: pointer;
 }
-.even-columns{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  gap: 2rem;
+ #blue-line{
+  height: 1px;
+  margin-block: 2rem;
 }
-.column{
-
+ /* for overwite container block padding in footer section */
+.change-padding-block{
+  padding-top: 5rem;
+  padding-bottom: 4rem;
 }
 
 @media screen and (min-width:770px) {
@@ -311,7 +341,12 @@ margin-inline: auto;
 .container{
   padding: 5rem 2.5rem ;
 }
-
+ /* for overwite container padding in footer section */
+ 
+ .change-padding-block{
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
 .small-container{
   max-width:50%;
   margin-bottom: 5rem;
@@ -380,6 +415,12 @@ margin-inline: auto;
 #change-container{
   padding-bottom: 5rem;
 }
+.grid-layout{
+  grid-template-areas:
+  'footer-info-sec product   company'
+  'footer-info-sec resoucres policies' ; 
+  
+}
 
 }
 
@@ -408,17 +449,22 @@ margin-inline: auto;
   .container{
     padding: 8rem 2.5rem ;
   }
+  /* for overwite container padding in footer section */
+  .change-padding-block{
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+  }
   .small-container{
-    max-width: 780px;
+    max-width: 750px;
     margin-inline: auto;
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
   }
   .flex-column{
     align-items: center;
   }
-  /* .flex-row{
+  .flex-row{
     justify-content:center;
-  } */
+  }
   .text-align{
     text-align: center;
   }
@@ -443,6 +489,11 @@ margin-inline: auto;
    }
    #change-container{
     padding-bottom: 7.5rem;
+  }
+  .grid-layout{
+    grid-template-areas:
+    'footer-info-sec product company resoucres policies '; 
+    
   }
 }
 
