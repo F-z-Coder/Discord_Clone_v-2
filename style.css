@@ -5,6 +5,7 @@
   --clr-neutral-100:rgb(255, 255, 255);
   --clr-neutral-200:rgb(246,246,246);
   --clr-accent-100:rgb(121 131 245);
+  --clr-accent-200:  rgb(87,101,242);
   --clr-accent-500:rgb(64,78,237);
   
 
@@ -155,7 +156,7 @@ a{
 
 .flex-column{
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   align-items:flex-start;
   justify-content: center;
 }
@@ -179,6 +180,10 @@ a{
   align-items: center;
   gap: .5rem;
 }
+.downloadbtn-text{
+  text-align: start;
+
+}
 .changeclr:hover>svg{
   fill: var(--clr-accent-500);
   transition: fill 50ms ease-in-out;
@@ -186,40 +191,44 @@ a{
 #openinbrower-btn{
   display: none;
 }
-#username-wrapper{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 3rem;
+#openinbrower-section{
+  display: none;
+}
+ /* Open in browser section css */
+ #username-wrapper{
+  max-width: 25rem;
+  margin-inline: auto;
+  margin-top: 2rem;
   padding: .5rem .5rem .5rem 1rem;
   border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
 }
 #username{
+  width: 100%;
   border: none;
   outline: none;
   padding: .5rem;
 }
 
 #submit-username-btn{
- border: none;
- border-radius: 2rem;
  width: 4rem;
  height: 2.5rem;
  padding: .5rem;
- margin-left: 5rem;
+ border: none;
+ border-radius: 2rem;
 }
 #submit-username-btn img{
   width: 100%;
   height: 100%;
 }
 #tandc{
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 #tandc a{
   text-decoration: underline;
   color: var(--clr-neutral-100);
 }
-
 .topsectionimg{
   overflow: hidden;
   margin-inline: auto;
@@ -227,7 +236,6 @@ a{
 .mountainimg{
   display:none;
 }
-
 .tableimg{
   display: none;
 }
@@ -258,7 +266,6 @@ margin-inline: auto;
 #videocall-img{
   width: 100%;
 }
-
 #change-container{
   display: flex;
   flex-flow: column wrap;
@@ -284,7 +291,7 @@ margin-inline: auto;
 }
 
 .accent-btn{
-  background-color: var(--clr-accent-500);
+  background-color: var(--clr-accent-200);
 }
 .accent-btn:hover{
   background-color: var(--clr-accent-100);
@@ -321,6 +328,7 @@ margin-inline: auto;
  .language-selector-wrapper{
   display: flex;
   align-items: center;
+  cursor: pointer;
  }
  .language-selector-wrapper img{
   width: 24px;
@@ -384,13 +392,6 @@ margin-inline: auto;
   max-width:50%;
   margin-bottom: 5rem;
 }
-#openinbrower-btn{
-  display: block;
-}
-#openinbrower-btn:hover{
-  background-color: rgb(54 57 63);
-}
-
 .topsectionimg{
  position: absolute;
  width: 100%;
@@ -501,6 +502,13 @@ margin-inline: auto;
   .text-align{
     text-align: center;
   }
+  #openinbrower-btn{
+    display: block;
+  }
+  #openinbrower-btn:hover{
+    background-color: rgb(54 57 63);
+  }
+ 
   .shoeimg{
     display: block;
   }
@@ -523,9 +531,6 @@ margin-inline: auto;
    #change-container{
     padding-bottom: 7.5rem;
   }
-
-  
-
   .grid-layout{
     grid-template-areas:
     'footer-info-sec product company resoucres policies '; 
@@ -543,6 +548,12 @@ margin-inline: auto;
 .text-clr-neutral-200{
   color: var(--clr-neutral-200);
 }
+.text-clr-accent-100{
+color: var(--clr-accent-100);
+}
+.text-clr-accent-200{
+  color: var(--clr-accent-200);
+}
 .text-clr-accent-500{
   color: var(--clr-accent-500);
 }
@@ -555,6 +566,12 @@ margin-inline: auto;
 }
 .bg-clr-neutral-200{
   background-color: var(--clr-neutral-200);
+}
+.bg-clr-accent-100{
+  background-color: var(--clr-accent-100);
+}
+.bg-clr-accent-200{
+  background-color: var(--clr-accent-200);
 }
 .bg-clr-accent-500{
   background-color: var(--clr-accent-500);
