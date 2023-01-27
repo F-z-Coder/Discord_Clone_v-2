@@ -7,7 +7,7 @@
         <title>Document</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body id="body">
         <header class="bg-clr-accent-500">
             <div class="header-container flex-nowrap">
                 <div>
@@ -47,9 +47,74 @@
                         Login
                     </a>
                 </div>
-                <div class="mobile-version-icon">
+                <div id="open-nav-btn" class="mobile-version-icon">
                     <img src="imgs\hamburger_icon.svg" alt="Hamburger_icon">
                 </div>
+            </div>
+            
+            <div class="mobile-nav bg-clr-neutral-100">
+                <div id="close-icon">
+                    <img src="imgs\close_icon.svg" alt="close-icon">
+                </div>
+                <div class="moblie-nav-section-wrapper">
+                    <div>
+                        <a href="">
+                            <img src="imgs\discord_black_logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div id="blackline"></div>
+                    <div class="moblie-nav-section">
+                        <ul role="list">
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-primary">Home</a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-primary">Download</a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-primary">Nitro</a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-primary">Discover</a>
+                            </li>
+                            <li class="viewmore">
+                                <a href="" class="fs-nav fw-normal text-clr-primary">Safety
+                                  </a>
+                                  <img class="goto-icon" src="imgs\greater-than.svg" alt="Goto">
+                            </li>
+                            <li class="viewmore">
+                                <a href="" class="fs-nav fw-normal text-clr-primary">Mod Academy</a>
+                                <img class="goto-icon" src="imgs\greater-than.svg" alt="Goto">
+                            </li>
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-primary">Support</a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-primary">Blog</a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-nav fw-normal text-clr-primary">Careers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div 
+                        class="fixed-btn downloadbtn button accent-btn   description-margin">
+
+                        <svg width="24" height="24" viewbox="0 0 24 24">
+                            <g fill="#FFFFFF">
+                                <path
+                                    d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z"
+                                    fill="#FFFFFF"></path>
+                                <path
+                                    d="M18 18.001V20.001H6V18.001H4V20.001C4 21.103 4.897 22.001 6 22.001H18C19.104 22.001 20 21.103 20 20.001V18.001H18Z"
+                                    fill="#FFFFFF"></path>
+                            </g>
+                        </svg>
+                        <a class=" change-text fs-small-button  fw-normal text-clr-neutral-100" href="#">
+                            Download from Google Play
+                        </a>
+                    </div>
             </div>
         </header>
 
@@ -71,8 +136,7 @@
 
                         <div id="download-or-open-sec" class="flex-row description-margin">
                             <div
-                                id="downloadbtn"
-                                class="button extra-padding changeclr | bg-clr-neutral-100">
+                                class=" downloadbtn button extra-padding changeclr | bg-clr-neutral-100">
 
                                 <svg width="24" height="24" viewbox="0 0 24 24">
                                     <g>
@@ -83,7 +147,7 @@
                                     </g>
                                 </svg>
 
-                                <a class="downloadbtn-text fs-button fw-medium text-clr-primary" href="#">
+                                <a class="change-text fs-button fw-medium text-clr-primary" href="#">
                                     Download from Google Play
                                 </a>
                             </div>
@@ -104,7 +168,10 @@
                                 </div>
                             </form>
                             <div id="tandc" class="fs-small-button text-clr-neutral-100 fw-normal">
-                                By registering, you agree to Discord's <a href="">Terms of Service</a> and <a href="">Privacy Policy</a>.
+                                By registering, you agree to Discord's
+                                <a href="">Terms of Service</a>
+                                and
+                                <a href="">Privacy Policy</a>.
                             </div>
                         </div>
                     </div>
@@ -209,8 +276,7 @@
                     </div>
 
                     <div
-                        id="downloadbtn"
-                        class="button accent-btn  extra-padding description-margin">
+                        class="downloadbtn button accent-btn  extra-padding description-margin">
                         <svg width="24" height="24" viewbox="0 0 24 24">
                             <g fill="#FFFFFF">
                                 <path
@@ -221,7 +287,7 @@
                                     fill="#FFFFFF"></path>
                             </g>
                         </svg>
-                        <a class=" downloadbtn-text |fs-button fw-medium text-clr-neutral-100" href="#">
+                        <a class=" change-text fs-button fw-medium text-clr-neutral-100" href="#">
                             Download from Google Play
                         </a>
                     </div>
@@ -380,7 +446,10 @@
                         </a>
                     </div>
                     <div class="button accent-btn">
-                        <a id="download-or-signup-btn" class="fs-small-button fw-medium text-clr-neutral-100" href="#">
+                        <a
+                            id="download-or-signup-btn"
+                            class="fs-small-button fw-medium text-clr-neutral-100"
+                            href="#">
                             Download
                         </a>
                     </div>
