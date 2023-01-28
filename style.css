@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700;800&family=Rowdies:wght@400;700&display=swap');
-/* Get all size clr weights */
+/* Get all clr fontfamily  font-weights font-size  */
 :root{
   --clr-primary:rgb(35,39,42);
   --clr-neutral-100:rgb(255, 255, 255);
@@ -39,6 +39,7 @@
 }
 
 /* Css reset  */
+
 /* Box sizing rules */
 *,
 *::before,
@@ -96,6 +97,7 @@ picture ,svg{
     scroll-behavior: auto !important;
   }
 }
+
 /* Layout Css */
 body{
   font-family: var(--ff-primary);
