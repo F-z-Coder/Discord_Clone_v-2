@@ -144,8 +144,8 @@ a{
 }
 
 .mobile-nav{
-  display: none;
   width: 330px;
+  /* when position is fixed then percentage value refers to the size of screen */
   height:100%;
   position: fixed;
   z-index: 10;
@@ -153,7 +153,17 @@ a{
   right: 0;
   border-top-left-radius: .5rem;
   border-bottom-left-radius: .5rem;
+
+  /* nav is not visible after translatex it 100% */
+  /* for translate function percentage value refers to the width of the reference box(box to translate here 330px) */
+  transform: translateX(100%);
+  transition: transform 1s ease-in;
 }
+/* nav visiable */
+.mobile-nav[visible]{
+  transform: translateX(0);
+}
+
 /* to disable scroll on nav open */
 body[data-unscrollable]{
   /* height is  already set in css reset section  as it is necessary to set to control overflow or scrolling option */
@@ -185,8 +195,6 @@ body[data-dim-effect]::before{
   overflow-y: scroll;
   scrollbar-width: thin;
 }
-
-
 #blackline{
   height: 2px;
   margin-top: 1.5rem;
@@ -275,13 +283,15 @@ body[data-dim-effect]::before{
 }
  /* Open in browser section css */
  #username-wrapper{
-  max-width: 25rem;
+  /* change to 25 rem using js for transition */
+  max-width: 5rem;
   margin-inline: auto;
   margin-top: 2rem;
   padding: .5rem .5rem .5rem 1rem;
   border-radius: 2rem;
   display: flex;
   justify-content: space-between;
+  transition: max-width 1s ease-in-out;
 }
 #username{
   width: 100%;
